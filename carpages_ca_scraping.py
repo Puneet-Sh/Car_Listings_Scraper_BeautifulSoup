@@ -45,8 +45,9 @@ def fun():
         print(f"Scraped page {counter}")
 
     df = pd.DataFrame(df_rows)
-    df.to_csv('data_saved/carpages_data.csv', index=False)
+    df.to_csv('carpages_data.csv', index=False)
     print("Scraping complete. Data saved to carpages_data.csv")
 
 if __name__ == "__main__":
     fun()
+
